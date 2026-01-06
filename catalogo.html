@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo | AutoPrime</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <strong>AutoPrime</strong>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="catalogo.html">Catálogo</a>
+  </nav>
+</header>
+
+<section>
+  <h1>Catálogo de vehículos</h1>
+
+  <div class="filtros">
+    <button onclick="filtrar('todos')">Todos</button>
+    <button onclick="filtrar('sedan')">Sedán</button>
+    <button onclick="filtrar('suv')">SUV</button>
+    <button onclick="filtrar('premium')">Premium</button>
+  </div>
+
+  <div class="cards" id="listaVehiculos">
+
+    <div class="vehiculo" data-tipo="sedan">
+      <h3>Sedán Ejecutivo</h3>
+      <p>Confort y eficiencia para ciudad.</p>
+    </div>
+
+    <div class="vehiculo" data-tipo="suv">
+      <h3>SUV Familiar</h3>
+      <p>Espacio y seguridad para todos.</p>
+    </div>
+
+    <div class="vehiculo" data-tipo="premium">
+      <h3>Deportivo Premium</h3>
+      <p>Diseño y potencia sin concesiones.</p>
+    </div>
+
+    <div class="vehiculo" data-tipo="sedan">
+      <h3>Sedán Compacto</h3>
+      <p>Práctico, económico y moderno.</p>
+    </div>
+
+    <div class="vehiculo" data-tipo="suv">
+      <h3>SUV Urbano</h3>
+      <p>Versátil para trabajo y familia.</p>
+    </div>
+
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
 
