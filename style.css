@@ -273,3 +273,99 @@ h1, h2, h3, h4 {
     grid-template-columns: 1fr;
   }
 }
+/* ===== AJUSTES GENERALES ===== */
+
+body {
+  background-color: #0c0c0c;
+  color: #f1f1f1;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+.hero {
+  position: relative;
+  min-height: 80vh;
+  background: url("assets/img/inicio familia.png") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.75),
+    rgba(0,0,0,0.4)
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-text h1,
+.hero-text h2 {
+  font-size: clamp(36px, 5vw, 56px);
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  max-width: 520px;
+  opacity: 0.9;
+}
+.benefit-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.benefit-card img {
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.btn,
+.btn-outline {
+  padding: 12px 28px;
+  border-radius: 999px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.btn {
+  background: #fff;
+  color: #000;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.btn-outline:hover {
+  background: rgba(255,255,255,0.08);
+}
+.footer {
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.6;
+}
