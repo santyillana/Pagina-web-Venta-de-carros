@@ -1,127 +1,64 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AutoPrime | Venta inteligente de vehículos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Autos Prime | Quality Used Cars</title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Fuente elegante -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
 </head>
-
 <body>
 
-  <!-- ================= HEADER ================= -->
-  <header class="header">
-    <div class="container header-content">
-      <h1 class="logo">AutoPrime</h1>
-      <nav class="nav">
-        <a href="index.html">Inicio</a>
-        <a href="catalogo.html">Catálogo</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#contacto" class="btn-outline">Contacto</a>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="logo">
+        <a href="index.html">Autos<span>Prime</span></a>
+      </div>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="inventory.html">Inventory</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </nav>
+
+      <div class="header-cta">
+        <a href="contact.html" class="btn btn-primary">Schedule a Visit</a>
+      </div>
     </div>
   </header>
 
-  <!-- ================= HERO ================= -->
+  <!-- Hero Section -->
   <section class="hero">
-    <div class="hero-overlay"></div>
-
-    <div class="container hero-content">
-      <div class="hero-text">
-        <h2>Elegir bien hoy,<br>crecer mañana</h2>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <h1>Quality Used Cars You Can Trust</h1>
         <p>
-          No vendemos autos.<br>
-          Te ayudamos a tomar decisiones inteligentes según tu momento.
+          Hand-picked vehicles with transparent pricing and easy scheduling.
         </p>
 
-        <div class="hero-actions">
-          <a href="catalogo.html" class="btn-primary">Ver vehículos</a>
-          <a href="#contacto" class="btn-secondary">Asesoría gratuita</a>
+        <div class="hero-buttons">
+          <a href="inventory.html" class="btn btn-primary">Browse Inventory</a>
+          <a href="#" class="btn btn-secondary">Contact via WhatsApp</a>
         </div>
       </div>
 
       <div class="hero-image">
-        <img src="assets/img/inicio familia.png" alt="Familia con vehículo comercial">
+        <!-- Imagen va aquí después -->
+        <div class="image-placeholder">Hero Image</div>
       </div>
     </div>
   </section>
 
-  <!-- ================= BENEFICIOS ================= -->
-  <section class="benefits">
-    <div class="container">
-      <h3>Cómo trabajamos</h3>
-
-      <div class="benefits-grid">
-        <div class="benefit-card">
-          <h4>Asesoría real</h4>
-          <p>Escuchamos tu necesidad antes de mostrarte opciones.</p>
-        </div>
-
-        <div class="benefit-card">
-          <h4>Opciones claras</h4>
-          <p>Sin saturarte con información innecesaria.</p>
-        </div>
-
-        <div class="benefit-card">
-          <h4>Visión a futuro</h4>
-          <p>Lo que eliges hoy debe servirte mañana.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= PROMOCIÓN ================= -->
-  <section class="promo">
-    <div class="container promo-box">
-      <h3>Promoción del mes</h3>
-      <p>
-        Financiamiento flexible y bonos especiales en vehículos familiares
-        y comerciales seleccionados.
-      </p>
-      <a href="catalogo.html" class="btn-primary">Ver promoción</a>
-    </div>
-  </section>
-
-  <!-- ================= NOSOTROS ================= -->
-  <section class="about" id="nosotros">
-    <div class="container about-content">
-      <h3>Más que una venta, una decisión</h3>
-      <p>
-        Muchos clientes comienzan con una opción práctica
-        y evolucionan cuando su negocio o familia crece.
-        Nuestro trabajo es acompañarte en ese proceso.
-      </p>
-    </div>
-  </section>
-
-  <!-- ================= CONTACTO ================= -->
-  <section class="contact" id="contacto">
-    <div class="container contact-box">
-      <h3>Hablemos</h3>
-      <p>
-        Dinos qué necesitas y te orientamos sin compromiso.
-      </p>
-
-      <form class="contact-form">
-        <input type="text" placeholder="Nombre" required>
-        <input type="email" placeholder="Correo" required>
-        <textarea placeholder="¿Qué estás buscando?" required></textarea>
-        <button type="submit" class="btn-primary">Solicitar asesoría</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- ================= FOOTER ================= -->
-  <footer class="footer">
-    <div class="container">
-      <p>© 2026 AutoPrime · Decisiones inteligentes sobre ruedas</p>
-    </div>
-  </footer>
+  <!-- JS -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
 
 </body>
 </html>
