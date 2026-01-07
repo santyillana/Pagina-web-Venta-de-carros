@@ -1,0 +1,97 @@
+/* =========================
+   BUTTONS (GLOBAL)
+========================= */
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+/* Primary button */
+.btn-primary {
+  background-color: var(--color-red);
+  color: var(--color-light);
+}
+
+.btn-primary:hover {
+  background-color: #a50f19;
+  transform: translateY(-2px);
+}
+
+/* Secondary button */
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-light);
+  border: 2px solid var(--color-light);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+
+/* =========================
+   HERO BUTTON GROUP
+========================= */
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   SECTION TITLES
+========================= */
+.section-title {
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* =========================
+   CARD BASE (para Inventory)
+========================= */
+.card {
+  background-color: var(--color-dark-secondary);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card-price {
+  font-size: 18px;
+  color: var(--color-red);
+  margin-bottom: 15px;
+}
+
+/* =========================
+   PLACEHOLDER IMAGE (CARDS)
+========================= */
+.card-image-placeholder {
+  width: 100%;
+  height: 200px;
+  background-color: #2a2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gray);
+}
