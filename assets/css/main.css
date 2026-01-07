@@ -145,11 +145,11 @@ a {
 ========================= */
 .hero {
   position: relative;
-  height: 90vh;
-  min-height: 600px;
+  min-height: 100vh;
   background-image: url("../img/ui/hero.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
 }
@@ -159,10 +159,11 @@ a {
   inset: 0;
   background: linear-gradient(
     to right,
-    rgba(0, 0, 0, 0.85),
-    rgba(0, 0, 0, 0.45)
+    rgba(0,0,0,0.85),
+    rgba(0,0,0,0.35)
   );
 }
+
 
 .hero-content {
   position: relative;
