@@ -52,6 +52,9 @@ a {
 /* =========================
    HEADER
 ========================= */
+/* =========================
+   HEADER
+========================= */
 .site-header {
   background-color: var(--color-dark-secondary);
   padding: 20px 0;
@@ -66,17 +69,38 @@ a {
   justify-content: space-between;
 }
 
-/* Logo */
+/* =========================
+   LOGO
+========================= */
 .logo img {
   max-height: 60px;
   display: block;
 }
 
-.logo span {
+/* Logo link (imagen + texto) */
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-text {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.logo-autos {
+  color: #ffffff;
+}
+
+.logo-prime {
   color: var(--color-red);
 }
 
-/* Navigation */
+/* =========================
+   NAVIGATION
+========================= */
 .main-nav ul {
   list-style: none;
   display: flex;
@@ -90,6 +114,31 @@ a {
 
 .main-nav a:hover {
   color: var(--color-red);
+}
+
+/* =========================
+   LOGO TEXT
+========================= */
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-text {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.logo-autos {
+  color: #ffffff;
+}
+
+.logo-prime {
+  color: var(--color-red);
+}
+
 }
 
 /* =========================
