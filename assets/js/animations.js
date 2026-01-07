@@ -1,0 +1,25 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const animatedElements = document.querySelectorAll(".animate");
+
+  if (!("IntersectionObserver" in window)) {
+    // Fallback: si el navegador es muy antiguo
+    animatedElements.forEach(el => el.classList.add("in-view"));
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries, observerInstance) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+          observerInstance.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.15
+    }
+  );
+
+  animatedElements.forEach(el => observer.observe(el));
+});
