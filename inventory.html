@@ -15,6 +15,7 @@
   <!-- Header -->
   <header class="site-header">
     <div class="container header-container">
+
       <div class="logo">
         <a href="index.html">Autos<span>Prime</span></a>
       </div>
@@ -31,49 +32,66 @@
       <div class="header-cta">
         <a href="contact.html" class="btn btn-primary">Schedule a Visit</a>
       </div>
+
     </div>
   </header>
-  <!-- Inventory Intro -->
+
+  <!-- Inventory Hero -->
   <section class="inventory-hero">
     <div class="container">
+
       <h1 class="animate fade-up">Available Vehicles</h1>
+
       <p class="animate fade-up delay-1">
-        Browse our current selection of quality used cars.
-        Schedule a visit to see any vehicle in person.
+        Browse our curated selection of quality used vehicles.
+        Every car is inspected and transparently priced.
       </p>
+
     </div>
   </section>
+
   <!-- Inventory Filters -->
   <section class="inventory-filters">
     <div class="container animate fade-up delay-2">
 
-      <select>
-        <option>All Types</option>
-        <option>Sedan</option>
-        <option>SUV</option>
-        <option>Truck</option>
-      </select>
+      <div class="filters-grid">
 
-      <select>
-        <option>Price Range</option>
-        <option>Under $20,000</option>
-        <option>$20,000 – $30,000</option>
-        <option>Over $30,000</option>
-      </select>
+        <select>
+          <option value="">All Types</option>
+          <option value="sedan">Sedan</option>
+          <option value="suv">SUV</option>
+          <option value="truck">Truck</option>
+        </select>
+
+        <select>
+          <option value="">Price Range</option>
+          <option value="0-20000">Under $20,000</option>
+          <option value="20000-30000">$20,000 – $30,000</option>
+          <option value="30000+">Over $30,000</option>
+        </select>
+
+        <button class="btn btn-secondary">
+          Apply Filters
+        </button>
+
+      </div>
 
     </div>
   </section>
+
   <!-- Inventory Grid -->
   <section class="inventory-list">
     <div class="container vehicles-grid">
 
-      <!-- Vehicle -->
+      <!-- Vehicle Card -->
       <article class="card animate fade-up">
         <div class="card-image-placeholder">Vehicle Image</div>
         <div class="card-body">
           <h3 class="card-title">Toyota Corolla 2019</h3>
           <p class="card-price">$15,500</p>
-          <a href="vehicle.html" class="btn btn-secondary">View Details</a>
+          <a href="vehicle.html" class="btn btn-secondary">
+            View Details
+          </a>
         </div>
       </article>
 
@@ -82,7 +100,9 @@
         <div class="card-body">
           <h3 class="card-title">Honda CR-V 2020</h3>
           <p class="card-price">$22,900</p>
-          <a href="vehicle.html" class="btn btn-secondary">View Details</a>
+          <a href="vehicle.html" class="btn btn-secondary">
+            View Details
+          </a>
         </div>
       </article>
 
@@ -91,7 +111,9 @@
         <div class="card-body">
           <h3 class="card-title">Ford F-150 2018</h3>
           <p class="card-price">$26,500</p>
-          <a href="vehicle.html" class="btn btn-secondary">View Details</a>
+          <a href="vehicle.html" class="btn btn-secondary">
+            View Details
+          </a>
         </div>
       </article>
 
@@ -100,7 +122,9 @@
         <div class="card-body">
           <h3 class="card-title">Nissan Rogue 2021</h3>
           <p class="card-price">$24,000</p>
-          <a href="vehicle.html" class="btn btn-secondary">View Details</a>
+          <a href="vehicle.html" class="btn btn-secondary">
+            View Details
+          </a>
         </div>
       </article>
 
@@ -109,12 +133,77 @@
         <div class="card-body">
           <h3 class="card-title">BMW 3 Series 2018</h3>
           <p class="card-price">$27,900</p>
-          <a href="vehicle.html" class="btn btn-secondary">View Details</a>
+          <a href="vehicle.html" class="btn btn-secondary">
+            View Details
+          </a>
         </div>
       </article>
 
     </div>
   </section>
+
+  <!-- Inventory CTA -->
+  <section class="inventory-cta">
+    <div class="container animate fade-up">
+
+      <h2>Interested in One of Our Vehicles?</h2>
+
+      <p>
+        Schedule a visit or contact us to get more details.
+        We’ll be happy to assist you.
+      </p>
+
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn btn-primary">
+          Schedule a Visit
+        </a>
+        <a href="#" class="btn btn-secondary">
+          Contact via WhatsApp
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+
+      <div class="footer-brand">
+        <h3>Autos<span>Prime</span></h3>
+        <p>
+          Quality used vehicles with transparent pricing and
+          easy scheduling.
+        </p>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="inventory.html">Inventory</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <ul>
+          <li>Email: info@autosprime.com</li>
+          <li>Phone: (555) 123-4567</li>
+          <li>
+            <a href="#" class="footer-whatsapp">WhatsApp Chat</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Autos Prime. All rights reserved.</p>
+    </div>
+  </footer>
+
   <!-- JS -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/animations.js"></script>
