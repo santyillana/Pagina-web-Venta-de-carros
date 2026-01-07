@@ -264,3 +264,14 @@ section {
     gap: 20px;
   }
 }
+/* ================================
+   HARD RESET — REMOVE BACKGROUND LOGO
+   ================================ */
+
+html,
+body {
+  background-image: none !important;
+  background-repeat: no-repeat !important;
+  background-position: initial !important;
+  background-size: auto !important;
+}
